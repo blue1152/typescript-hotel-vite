@@ -1,3 +1,5 @@
 export default function SignUpPage() {
-    return (<></>);
+    return (<>
+        <h1>signup</h1>
+    </>);
 }

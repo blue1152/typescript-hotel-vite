@@ -1,3 +1,5 @@
 export default function LoginPage() {
-    return (<></>);
+    return (<>
+        <h1>login</h1>
+    </>);
 }
