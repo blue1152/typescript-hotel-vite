@@ -5,6 +5,12 @@ export interface ApiResponse<T> {
     message?: string;
 }
 
+export interface GetData<T> {
+    success: boolean;
+    data: ApiResponse<T> | null;
+    err: any;
+}
+
 export enum PageType {
     USER_LOGIN = 'USER_LOGIN',
     USER_SIGNUP = 'USER_SIGNUP',
@@ -52,6 +58,11 @@ export interface RegisterUserInput extends UserBasicInfo {
 
 export interface UpdateUserInput extends UpdateUserInfo {
     address: Address;
+}
+
+export interface LoginInput {
+    email: string;
+    password: string;
 }
 
 export interface EmailInput {
