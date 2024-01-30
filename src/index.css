@@ -12,7 +12,7 @@ body {
   line-height: 1.618;
   color: #fff;
   background: #140F0A;
-  font-family: "Roboto", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+  font-family: "Noto Serif TC", sans-serif;
   font-size: 16px;
   letter-spacing: 0.0125 em;
 }
@@ -46,7 +46,6 @@ a:focus {
 }
 
 img {
-  width: 100%;
   height: auto;
   display: block;
 }
@@ -58,4 +57,93 @@ img {
 
 .section {
   padding: 75px 0;
+}
+
+/* home */
+.home_bg {
+  background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/typescript-hotel/%E6%A1%8C%E6%A9%9F%E7%89%88/banner.png?raw=true");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* 視差效果 */
+  width: 100%;
+  height: 50vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home_bg h2 {
+  z-index: 1;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 54px;
+}
+
+.home_bg .overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50vw;
+}
+
+.home_bg .nav-top {
+  width: 100%;
+  top: 0;
+  position: fixed;
+  z-index: 1;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.home_bg a {
+  color: #fff !important;
+}
+
+.home_bg .order{
+  background-color: #BF9D7D;
+  color: #fff !important;
+  padding: 0.5rem 1.5rem;
+  border: 0px;
+}
+
+.home_bg .navbar-collapse {
+  flex-grow: 0;
+}
+
+/* footer */
+#footer {
+  padding: 80px 0;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+.footer-content p {
+  line-height: 22px;
+}
+
+@media only screen and (max-width: 768px) {
+  .home_bg,
+  .home_bg .overlay {
+    height: 100vw;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .home_bg,
+  .home_bg .overlay {
+    height: 150vw;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .home_bg h2 {
+    font-size: 45px;
+  }
 }

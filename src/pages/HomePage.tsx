@@ -1,5 +1,9 @@
+import { Home, Footer } from '../components'
+
 export default function HomePage() {
-    return (<>
-        <h1>home</h1>
-    </>);
+    return (
+        <div className="home-page">
+            <Home />
+            <Footer />
+        </div>);
 }

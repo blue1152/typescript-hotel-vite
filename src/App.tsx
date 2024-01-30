@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { HomePage, LoginPage, SignUpPage } from './pages';
@@ -6,7 +7,7 @@ import { AuthProvider } from './utils/authContext';
 function App() {
   return (
     <>
-      <div className="container">
+      <div className="app-container">
         <BrowserRouter>
           <AuthProvider>
             <Routes>
